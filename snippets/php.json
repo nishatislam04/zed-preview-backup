@@ -1,0 +1,22 @@
+{
+  "class": {
+    "prefix": "pclass",
+    "body": ["<?php", "", "class $${1:ClassName}", "{", "    $0", "}"],
+    "description": "Basic PHP class"
+  },
+  "function": {
+    "prefix": "pfn",
+    "body": ["function $${1:functionName}($${2:params})", "{", "    $0", "}"],
+    "description": "PHP function"
+  },
+  "echo": {
+    "prefix": "pec",
+    "body": ["echo \"$${1:text}\";"],
+    "description": "PHP echo"
+  },
+  "public function": {
+    "prefix": "ppfn",
+    "body": ["public function $${1:name}($${2:params})", "{", "    $0", "}"],
+    "description": "PHP public function"
+  }
+}

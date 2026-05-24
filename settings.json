@@ -1,0 +1,483 @@
+{
+	"cli_default_open_behavior": "existing_window",
+	"preferred_line_length": 80,
+	"proxy": "",
+	"tasks": {
+		"enabled": false
+	},
+	"tab_size": 2,
+	"mouse_wheel_zoom": true,
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false
+	},
+	"use_on_type_format": false,
+
+	"active_pane_modifiers": {
+		"inactive_opacity": 0.8
+	},
+	"window_decorations": "client",
+	"centered_layout": {
+		"left_padding": 0.2
+	},
+	"bottom_dock_layout": "contained",
+	"preview_tabs": {
+		"enable_preview_from_project_panel": false,
+		"enabled": false
+	},
+	"inlay_hints": {
+		"show_other_hints": false,
+		"show_parameter_hints": false,
+		"show_type_hints": false,
+		"show_value_hints": false,
+		"show_background": false,
+		"enabled": false
+	},
+	"show_whitespaces": "none",
+	"use_autoclose": true,
+	"toolbar": {
+		"code_actions": false,
+		"agent_review": false,
+		"selections_menu": false,
+		"quick_actions": false,
+		"breadcrumbs": true
+	},
+	"relative_line_numbers": "disabled",
+	"sticky_scroll": {
+		"enabled": false
+	},
+	"fast_scroll_sensitivity": 5.0,
+	"scroll_sensitivity": 1.0,
+	"vertical_scroll_margin": 1,
+	"image_viewer": {
+		"unit": "decimal"
+	},
+	"colorize_brackets": true,
+	"always_treat_brackets_as_autoclosed": true,
+	"minimap": {
+		"max_width_columns": 80,
+		"thumb": "hover",
+		"current_line_highlight": "gutter"
+	},
+	"autosave": "off",
+	"session": {
+		"trust_all_worktrees": true
+	},
+	"git_panel": {
+		"dock": "left",
+		"button": false,
+		"tree_view": true
+	},
+	"diagnostics": {
+		"inline": {
+			"enabled": false,
+			"max_severity": "warning"
+		},
+		"button": false
+	},
+	"diagnostics_max_severity": "warning",
+	"completion_menu_scrollbar": "auto",
+	"hard_tabs": true,
+	"when_closing_with_no_tabs": "keep_window_open",
+	"inline_code_actions": true,
+	"base_keymap": "VSCode",
+	"buffer_font_family": "FiraCode Nerd Font Mono",
+	"buffer_font_weight": 450.0,
+	"ui_font_family": "Inter",
+	"ui_font_weight": 400.0,
+	"icon_theme": {
+		"mode": "dark",
+		"light": "Material Icon Theme",
+		"dark": "Material Icon Theme"
+	},
+	"buffer_line_height": {
+		"custom": 3.5999999046325684
+	},
+	"terminal": {
+		"toolbar": {
+			"breadcrumbs": true
+		},
+		"default_height": 325.0,
+		"scroll_multiplier": 1.0,
+		"button": false,
+		"dock": "bottom",
+		"font_family": "FiraCode Nerd Font Mono",
+		"font_size": 14.0,
+		"line_height": {
+			"custom": 2
+		}
+	},
+	"close_on_file_delete": true,
+	"current_line_highlight": "all",
+	"ui_font_size": 19.0,
+	"buffer_font_size": 17.4,
+	"restore_on_startup": "last_session",
+	"autoscroll_on_clicks": false,
+	"auto_update": false,
+	"cursor_shape": "bar",
+	"snippet_sort_order": "top",
+	"scrollbar": {
+		"show": "auto",
+		"cursors": true,
+		"git_diff": true,
+		"search_results": true,
+		"selected_text": true,
+		"selected_symbol": true,
+		"diagnostics": "warning",
+		"axes": {
+			"horizontal": false,
+			"vertical": true
+		}
+	},
+	"tabs": {
+		"close_position": "right",
+		"file_icons": true,
+		"git_status": true,
+		"activate_on_close": "history",
+		"show_close_button": "hover",
+		"show_diagnostics": "off"
+	},
+	"drag_and_drop_selection": {
+		"enabled": true,
+		"delay": 100
+	},
+	// status bar
+	"status_bar": { "cursor_position_button": false, "experimental.show": false },
+
+	"languages": {
+		"Markdown-Inline": {
+			"preferred_line_length": 80
+		},
+		"Markdown": {
+			"tab_size": 4,
+			"preferred_line_length": 80
+		},
+		"JavaScript": {
+			"language_servers": ["!vtsls", "biome"],
+			"formatter": { "language_server": { "name": "biome" } },
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			}
+		},
+		"TypeScript": {
+			"tab_size": 2,
+			"hard_tabs": true,
+			"prettier": { "allowed": false },
+			"language_servers": ["typescript-language-server", "!vtsls", "biome"],
+			"preferred_line_length": 100,
+			"completions": {
+				"lsp_insert_mode": "replace_suffix"
+			},
+			"tasks": { "enabled": true },
+			"inlay_hints": {
+				"show_background": false,
+				"enabled": false
+			},
+			"formatter": { "language_server": { "name": "biome" } },
+			"format_on_save": "on",
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			}
+		},
+		"TSX": {
+			"preferred_line_length": 100,
+			"tab_size": 2,
+			"hard_tabs": true,
+			"language_servers": [
+				"typescript-language-server",
+				"!vtsls",
+				"biome",
+				"tailwindcss-language-server"
+			],
+			"formatter": { "language_server": { "name": "biome" } },
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			}
+		},
+		"JSON": {
+			"tab_size": 2,
+			"formatter": { "language_server": { "name": "biome" } }
+		},
+		"JSONC": {
+			"preferred_line_length": 100,
+			"tab_size": 4,
+			"formatter": { "language_server": { "name": "biome" } }
+		},
+		"CSS": {
+			"formatter": { "language_server": { "name": "biome" } },
+			"language_servers": [
+				"tailwindcss-language-server",
+				"!vscode-css-language-server"
+			]
+		},
+		"Prisma": { "formatter": "language_server", "format_on_save": "on" }
+	},
+
+	"file_scan_exclusions": [
+		"**/node_modules/**",
+		"**/.next/**",
+		"**/dist/**",
+		"**/build/**",
+		"**/.turbo/**",
+		"**/.git/**",
+		"**/coverage/**",
+		"**/.nyc_output/**",
+		"**/.cache/**",
+		"**/.tanstack/**"
+	],
+
+	"hover_popover_delay": 400,
+	"soft_wrap": "bounded",
+	"wrap_guides": [100],
+	"unnecessary_code_fade": 0.5,
+	"lsp_document_colors": null,
+	"disable_ai": true,
+	"show_edit_predictions": false,
+
+	// # ui related. status bar
+	"line_indicator_format": "long",
+	"collaboration_panel": { "dock": "left", "button": false },
+	"agent": { "dock": "right", "button": false },
+	"debugger": { "button": false },
+	"search": { "button": false },
+
+	// # ui related. title bar
+	"title_bar": {
+		"button_layout": "platform_default",
+		"show_user_menu": false,
+		"show_branch_status_icon": false,
+		"show_branch_name": false,
+		"show_project_items": true,
+		"show_onboarding_banner": false,
+		"show_user_picture": false,
+		"show_sign_in": false,
+		"show_menus": false
+	},
+
+	// # ui related. tabs
+	"tab_bar": {
+		"show_pinned_tabs_in_separate_row": false,
+		"show": true,
+		"show_nav_history_buttons": false,
+		"show_tab_bar_buttons": false
+	},
+
+	"project_panel": {
+		"hide_hidden": false,
+		"hide_gitignore": false,
+		"sticky_scroll": true,
+		"button": false,
+		"default_width": 262.0,
+		"dock": "left",
+		"entry_spacing": "comfortable",
+		"file_icons": true,
+		"folder_icons": true,
+		"git_status": true,
+		"indent_size": 22.0,
+		"auto_reveal_entries": true,
+		"auto_fold_dirs": false,
+		"scrollbar": {
+			"show": null
+		},
+		"show_diagnostics": "errors",
+		"indent_guides": {
+			"show": "never"
+		},
+		"hide_root": true,
+		"starts_open": true // i am not sure about this one
+	},
+	// # outline panel
+	"outline_panel": {
+		"button": false,
+		"default_width": 300,
+		"dock": "left",
+		"file_icons": true,
+		"folder_icons": true,
+		"git_status": false,
+		"indent_size": 15,
+		"auto_reveal_entries": true,
+		"auto_fold_dirs": false,
+		"indent_guides": {
+			"show": "never"
+		},
+		"scrollbar": {
+			"show": null
+		}
+	},
+	"completions": {
+		"words_min_length": 2,
+		"words": "enabled",
+		"lsp": true,
+		"lsp_fetch_timeout_ms": 0,
+		"lsp_insert_mode": "replace_suffix" // i do not understand this
+	},
+	"indent_guides": {
+		"enabled": true,
+		"line_width": 1,
+		"active_line_width": 2,
+		"coloring": "indent_aware",
+		"background_coloring": "disabled"
+	},
+	"git": {
+		"blame": {
+			"show_avatar": false
+		},
+		"hunk_style": "staged_hollow",
+		"inline_blame": {
+			"enabled": false
+		},
+		"git_gutter": "tracked_files",
+		"enable_status": true,
+		"enable_diff": true,
+		"disable_git": false
+	},
+	"theme": {
+		"mode": "dark",
+		"light": "Catppuccin Latte",
+		"dark": "Ayu Mirage"
+	},
+	"file_types": {
+		"JSON": ["prettierrc"]
+	},
+
+	"lsp": {
+		"tailwindcss-language-server": {
+			"settings": {
+				"classFunctions": ["cva", "cx"],
+				"experimental": {
+					"classRegex": ["[cls|className]\\s\\:\\=\\s\"([^\"]*)"]
+				}
+			}
+		},
+		"markdownlint": {
+			"settings": {
+				"MD013": false,
+				"MD010": false
+			}
+		}
+	},
+	"profiles": {
+		// these are settings profiles i pasted from ai. but works
+		// command-pallet> SEARCH: settings profile choose
+		// we will test it with real fork project later
+		"Prettier+ESLint (OSS)": {
+			"settings": {
+				"languages": {
+					"JavaScript": {
+						"formatter": {
+							"external": {
+								"command": "prettier",
+								"arguments": ["--stdin-filepath", "{buffer_path}"]
+							}
+						},
+						"format_on_save": "on",
+						"tab_size": 2,
+						"hard_tabs": false,
+						"prettier": { "allowed": true },
+						"language_servers": [
+							"eslint",
+							"typescript-language-server",
+							"!biome",
+							"!vtsls"
+						],
+						"code_actions_on_format": {
+							"source.fixAll.eslint": true
+						}
+					},
+					"TypeScript": {
+						"formatter": {
+							"external": {
+								"command": "prettier",
+								"arguments": ["--stdin-filepath", "{buffer_path}"]
+							}
+						},
+						"format_on_save": "on",
+						"tab_size": 2,
+						"hard_tabs": false,
+						"prettier": { "allowed": true },
+						"language_servers": [
+							"eslint",
+							"typescript-language-server",
+							"!biome",
+							"!vtsls"
+						],
+						"code_actions_on_format": {
+							"source.fixAll.eslint": true
+						}
+					},
+					"TSX": {
+						"formatter": {
+							"external": {
+								"command": "prettier",
+								"arguments": ["--stdin-filepath", "{buffer_path}"]
+							}
+						},
+						"format_on_save": "on",
+						"tab_size": 2,
+						"hard_tabs": false,
+						"prettier": { "allowed": true },
+						"language_servers": [
+							"eslint",
+							"typescript-language-server",
+							"tailwindcss-language-server",
+							"!biome",
+							"!vtsls"
+						],
+						"code_actions_on_format": {
+							"source.fixAll.eslint": true
+						}
+					},
+					"CSS": {
+						"formatter": {
+							"external": {
+								"command": "prettier",
+								"arguments": ["--stdin-filepath", "{buffer_path}"]
+							}
+						},
+						"format_on_save": "on",
+						"prettier": { "allowed": true },
+						"language_servers": [
+							"tailwindcss-language-server",
+							"!vscode-css-language-server",
+							"!biome"
+						]
+					},
+					"JSON": {
+						"formatter": {
+							"external": {
+								"command": "prettier",
+								"arguments": ["--stdin-filepath", "{buffer_path}"]
+							}
+						},
+						"format_on_save": "on",
+						"prettier": { "allowed": true },
+						"language_servers": ["!biome"]
+					},
+					"JSONC": {
+						"formatter": {
+							"external": {
+								"command": "prettier",
+								"arguments": ["--stdin-filepath", "{buffer_path}"]
+							}
+						},
+						"format_on_save": "on",
+						"prettier": { "allowed": true },
+						"language_servers": ["!biome"]
+					}
+				},
+				"lsp": {
+					"eslint": {
+						"settings": {
+							"codeActionOnSave": {
+								"rules": ["import/order"]
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

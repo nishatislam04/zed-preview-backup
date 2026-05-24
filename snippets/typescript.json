@@ -1,0 +1,137 @@
+{
+  "JSX Th": {
+    "prefix": "th",
+    "body": ["<th className=\"\">$0</th>"],
+    "description": "Create a table header cell with className attribute"
+  },
+  "Log": {
+    "prefix": "log",
+    "body": ["console.log($0);"],
+    "description": "CUSTOM console log"
+  },
+  "JSX Div": {
+    "prefix": "div",
+    "body": ["<div className=\"\">$0</div>"],
+    "description": "Create a div with className attribute"
+  },
+  "JSX H1": {
+    "prefix": "h1",
+    "body": ["<h1 className=\"\">$0</h1>"],
+    "description": "Create an h1 with className attribute"
+  },
+  "JSX H2": {
+    "prefix": "h2",
+    "body": ["<h2 className=\"\">$0</h2>"],
+    "description": "Create an h2 with className attribute"
+  },
+  "JSX H3": {
+    "prefix": "h3",
+    "body": ["<h3 className=\"\">$0</h3>"],
+    "description": "Create an h3 with className attribute"
+  },
+  "JSX P": {
+    "prefix": "p",
+    "body": ["<p className=\"\">$0</p>"],
+    "description": "Create a paragraph with className attribute"
+  },
+  "JSX Section": {
+    "prefix": "section",
+    "body": ["<section className=\"\">$0</section>"],
+    "description": "Create a section with className attribute"
+  },
+  "JSX Article": {
+    "prefix": "article",
+    "body": ["<article className=\"\">$0</article>"],
+    "description": "Create an article with className attribute"
+  },
+  "JSX Header": {
+    "prefix": "header",
+    "body": ["<header className=\"\">$0</header>"],
+    "description": "Create a header with className attribute"
+  },
+  "JSX Footer": {
+    "prefix": "footer",
+    "body": ["<footer className=\"\">$0</footer>"],
+    "description": "Create a footer with className attribute"
+  },
+  "JSX Nav": {
+    "prefix": "nav",
+    "body": ["<nav className=\"\">$0</nav>"],
+    "description": "Create a nav with className attribute"
+  },
+  "JSX Span": {
+    "prefix": "span",
+    "body": ["<span className=\"\">$0</span>"],
+    "description": "Create a span with className attribute"
+  },
+  "JSX Button": {
+    "prefix": "button",
+    "body": ["<button className=\"\">$0</button>"],
+    "description": "Create a button with className attribute"
+  },
+  "JSX Input": {
+    "prefix": "input",
+    "body": ["<input className=\"\" type=\"\" />"],
+    "description": "Create an input with className attribute"
+  },
+  "JSX Label": {
+    "prefix": "label",
+    "body": ["<label className=\"\">$0</label>"],
+    "description": "Create a label with className attribute"
+  },
+  "JSX Form": {
+    "prefix": "form",
+    "body": ["<form className=\"\">$0</form>"],
+    "description": "Create a form with className attribute"
+  },
+  "JSX Select": {
+    "prefix": "select",
+    "body": ["<select className=\"\">$0</select>"],
+    "description": "Create a select with className attribute"
+  },
+  "JSX Option": {
+    "prefix": "option",
+    "body": ["<option className=\"\" value=\"\">$0</option>"],
+    "description": "Create an option with className attribute"
+  },
+  "JSX Textarea": {
+    "prefix": "textarea",
+    "body": ["<textarea className=\"\">$0</textarea>"],
+    "description": "Create a textarea with className attribute"
+  },
+  "JSX UL": {
+    "prefix": "ul",
+    "body": ["<ul className=\"\">$0</ul>"],
+    "description": "Create an unordered list with className attribute"
+  },
+  "JSX OL": {
+    "prefix": "ol",
+    "body": ["<ol className=\"\">$0</ol>"],
+    "description": "Create an ordered list with className attribute"
+  },
+  "JSX LI": {
+    "prefix": "li",
+    "body": ["<li className=\"\">$0</li>"],
+    "description": "Create a list item with className attribute"
+  },
+  "JSX Img": {
+    "prefix": "img",
+    "body": ["<img className=\"\" src=\"\" alt=\"\" />"],
+    "description": "Create an img with className attribute"
+  },
+  "JSX Table": {
+    "prefix": "table",
+    "body": ["<table className=\"\">$0</table>"],
+    "description": "Create a table with className attribute"
+  },
+  "JSX Tr": {
+    "prefix": "tr",
+    "body": ["<tr className=\"\">$0</tr>"],
+    "description": "Create a table row with className attribute"
+  },
+  "JSX Td": {
+    "prefix": "td",
+    "body": ["<td className=\"\">$0</td>"],
+    "description": "Create a table cell with className attribute"
+  }
+}
