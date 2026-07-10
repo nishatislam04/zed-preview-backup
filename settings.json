@@ -81,12 +81,12 @@
 	"when_closing_with_no_tabs": "keep_window_open",
 	"inline_code_actions": true,
 	"base_keymap": "VSCode",
-	"buffer_font_family": "FiraCode Nerd Font Mono",
-	"buffer_font_weight": 450.0,
-	"ui_font_family": "Inter",
+	"buffer_font_family": "FiraCode Nerd Font",
+	"buffer_font_weight": 500.0,
+	"ui_font_family": "DejaVu Sans",
 	"ui_font_weight": 400.0,
 	"icon_theme": {
-		"mode": "dark",
+		"mode": "light",
 		"light": "Material Icon Theme",
 		"dark": "Material Icon Theme"
 	},
@@ -101,7 +101,7 @@
 		"scroll_multiplier": 1.0,
 		"button": false,
 		"dock": "bottom",
-		"font_family": "FiraCode Nerd Font Mono",
+		"font_family": "Arial",
 		"font_size": 14.0,
 		"line_height": {
 			"custom": 2
@@ -141,19 +141,29 @@
 		"enabled": true,
 		"delay": 100
 	},
-	// status bar
 	"status_bar": { "cursor_position_button": false, "experimental.show": false },
 
 	"languages": {
+		"SQL": {
+			"preferred_line_length": 140
+		},
+		"Plain Text": {
+			"use_on_type_format": true,
+			"indent_guides": {
+				"background_coloring": "indent_aware"
+			},
+			"tab_size": 4,
+			"preferred_line_length": 120
+		},
 		"Markdown-Inline": {
-			"preferred_line_length": 80
+			"preferred_line_length": 120
 		},
 		"Markdown": {
 			"tab_size": 4,
-			"preferred_line_length": 80
+			"preferred_line_length": 120
 		},
 		"JavaScript": {
-			"language_servers": ["!vtsls", "biome"],
+			"language_servers": ["vtsls", "biome"],
 			"formatter": { "language_server": { "name": "biome" } },
 			"code_actions_on_format": {
 				"source.fixAll.biome": true,
@@ -164,7 +174,7 @@
 			"tab_size": 2,
 			"hard_tabs": true,
 			"prettier": { "allowed": false },
-			"language_servers": ["typescript-language-server", "!vtsls", "biome"],
+			"language_servers": ["!typescript-language-server", "vtsls", "biome"],
 			"preferred_line_length": 100,
 			"completions": {
 				"lsp_insert_mode": "replace_suffix"
@@ -178,35 +188,38 @@
 			"format_on_save": "on",
 			"code_actions_on_format": {
 				"source.fixAll.biome": true,
-				"source.organizeImports.biome": true
+				"source.organizeImports.biome": true,
+				"source.suppressRule.inline.biome": false
 			}
 		},
 		"TSX": {
 			"preferred_line_length": 100,
 			"tab_size": 2,
 			"hard_tabs": true,
-			"language_servers": [
-				"typescript-language-server",
-				"!vtsls",
-				"biome",
-				"tailwindcss-language-server"
-			],
+			"language_servers": ["!typescript-language-server", "vtsls", "biome"],
+			"prettier": { "allowed": false },
 			"formatter": { "language_server": { "name": "biome" } },
+			"format_on_save": "on",
 			"code_actions_on_format": {
 				"source.fixAll.biome": true,
-				"source.organizeImports.biome": true
+				"source.organizeImports.biome": true,
+				"source.suppressRule.inline.biome": false
 			}
 		},
 		"JSON": {
+			"preferred_line_length": 120,
 			"tab_size": 2,
+			"format_on_save": "on",
 			"formatter": { "language_server": { "name": "biome" } }
 		},
 		"JSONC": {
 			"preferred_line_length": 100,
 			"tab_size": 4,
+			"format_on_save": "on",
 			"formatter": { "language_server": { "name": "biome" } }
 		},
 		"CSS": {
+			"format_on_save": "on",
 			"formatter": { "language_server": { "name": "biome" } },
 			"language_servers": [
 				"tailwindcss-language-server",
@@ -237,14 +250,12 @@
 	"disable_ai": true,
 	"show_edit_predictions": false,
 
-	// # ui related. status bar
 	"line_indicator_format": "long",
 	"collaboration_panel": { "dock": "left", "button": false },
 	"agent": { "dock": "right", "button": false },
-	"debugger": { "button": false },
+	"debugger": { "save_breakpoints": true, "button": false },
 	"search": { "button": false },
 
-	// # ui related. title bar
 	"title_bar": {
 		"button_layout": "platform_default",
 		"show_user_menu": false,
@@ -257,7 +268,6 @@
 		"show_menus": false
 	},
 
-	// # ui related. tabs
 	"tab_bar": {
 		"show_pinned_tabs_in_separate_row": false,
 		"show": true,
@@ -268,7 +278,7 @@
 	"project_panel": {
 		"hide_hidden": false,
 		"hide_gitignore": false,
-		"sticky_scroll": true,
+		"sticky_scroll": false,
 		"button": false,
 		"default_width": 262.0,
 		"dock": "left",
@@ -287,9 +297,8 @@
 			"show": "never"
 		},
 		"hide_root": true,
-		"starts_open": true // i am not sure about this one
+		"starts_open": true
 	},
-	// # outline panel
 	"outline_panel": {
 		"button": false,
 		"default_width": 300,
@@ -312,7 +321,7 @@
 		"words": "enabled",
 		"lsp": true,
 		"lsp_fetch_timeout_ms": 0,
-		"lsp_insert_mode": "replace_suffix" // i do not understand this
+		"lsp_insert_mode": "replace_suffix"
 	},
 	"indent_guides": {
 		"enabled": true,
@@ -336,8 +345,8 @@
 	},
 	"theme": {
 		"mode": "dark",
-		"light": "Catppuccin Latte",
-		"dark": "Ayu Mirage"
+		"light": "Catppuccin Iced Latte (Blur)",
+		"dark": "Snazzy Theme"
 	},
 	"file_types": {
 		"JSON": ["prettierrc"]
@@ -348,21 +357,31 @@
 			"settings": {
 				"classFunctions": ["cva", "cx"],
 				"experimental": {
-					"classRegex": ["[cls|className]\\s\\:\\=\\s\"([^\"]*)"]
+					"classRegex": [
+						"\\.className\\s*[+]?=\\s*['\"]([^'\"]*)['\"]",
+						"\\.setAttributeNS\\(.*,\\s*['\"]class['\"],\\s*['\"]([^'\"]*)['\"]",
+						"\\.setAttribute\\(['\"]class['\"],\\s*['\"]([^'\"]*)['\"]",
+						"\\.classList\\.add\\(['\"]([^'\"]*)['\"]",
+						"\\.classList\\.remove\\(['\"]([^'\"]*)['\"]",
+						"\\.classList\\.toggle\\(['\"]([^'\"]*)['\"]",
+						"\\.classList\\.contains\\(['\"]([^'\"]*)['\"]",
+						"\\.classList\\.replace\\(\\s*['\"]([^'\"]*)['\"]",
+						"\\.classList\\.replace\\([^,)]+,\\s*['\"]([^'\"]*)['\"]"
+					]
 				}
 			}
 		},
-		"markdownlint": {
+		"vtsls": {
 			"settings": {
-				"MD013": false,
-				"MD010": false
+				"typescript": {
+					"tsserver": {
+						"maxTsServerMemory": 4096
+					}
+				}
 			}
 		}
 	},
 	"profiles": {
-		// these are settings profiles i pasted from ai. but works
-		// command-pallet> SEARCH: settings profile choose
-		// we will test it with real fork project later
 		"Prettier+ESLint (OSS)": {
 			"settings": {
 				"languages": {
