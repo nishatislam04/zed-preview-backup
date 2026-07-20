@@ -1,4 +1,5 @@
 {
+	"semantic_tokens": "combined",
 	"cli_default_open_behavior": "existing_window",
 	"preferred_line_length": 80,
 	"proxy": "",
@@ -160,7 +161,9 @@
 		},
 		"Markdown": {
 			"tab_size": 4,
-			"preferred_line_length": 120
+			"preferred_line_length": 120,
+			"format_on_save": "on",
+			"language_servers": ["rumdl"]
 		},
 		"JavaScript": {
 			"language_servers": ["vtsls", "biome"],
@@ -176,6 +179,7 @@
 			"prettier": { "allowed": false },
 			"language_servers": ["!typescript-language-server", "vtsls", "biome"],
 			"preferred_line_length": 100,
+			"semantic_tokens": "combined",
 			"completions": {
 				"lsp_insert_mode": "replace_suffix"
 			},
@@ -200,6 +204,7 @@
 			"prettier": { "allowed": false },
 			"formatter": { "language_server": { "name": "biome" } },
 			"format_on_save": "on",
+			"semantic_tokens": "combined",
 			"code_actions_on_format": {
 				"source.fixAll.biome": true,
 				"source.organizeImports.biome": true,
@@ -346,7 +351,7 @@
 	"theme": {
 		"mode": "dark",
 		"light": "Catppuccin Iced Latte (Blur)",
-		"dark": "Snazzy Theme"
+		"dark": "The Dark Side"
 	},
 	"file_types": {
 		"JSON": ["prettierrc"]
@@ -378,6 +383,12 @@
 						"maxTsServerMemory": 4096
 					}
 				}
+			}
+		},
+		"rumdl": {
+			"binary": {
+				"path": "rumdl",
+				"arguments": ["server"]
 			}
 		}
 	},
