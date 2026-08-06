@@ -1,4 +1,5 @@
 {
+	"completion_menu_item_kind": "symbol",
 	"semantic_tokens": "combined",
 	"cli_default_open_behavior": "existing_window",
 	"preferred_line_length": 80,
@@ -82,10 +83,10 @@
 	"when_closing_with_no_tabs": "keep_window_open",
 	"inline_code_actions": true,
 	"base_keymap": "VSCode",
-	"buffer_font_family": "FiraCode Nerd Font",
-	"buffer_font_weight": 500.0,
-	"ui_font_family": "DejaVu Sans",
-	"ui_font_weight": 400.0,
+	"buffer_font_family": "JetBrainsMono Nerd Font",
+	"buffer_font_weight": 600.0,
+	"ui_font_family": "MesloLGS NF",
+	"ui_font_weight": 600.0,
 	"icon_theme": {
 		"mode": "light",
 		"light": "Material Icon Theme",
@@ -110,8 +111,8 @@
 	},
 	"close_on_file_delete": true,
 	"current_line_highlight": "all",
-	"ui_font_size": 19.0,
-	"buffer_font_size": 17.4,
+	"ui_font_size": 18.0,
+	"buffer_font_size": 18.4,
 	"restore_on_startup": "last_session",
 	"autoscroll_on_clicks": false,
 	"auto_update": false,
@@ -160,6 +161,15 @@
 			"preferred_line_length": 120
 		},
 		"Markdown": {
+			"document_symbols": "on",
+			"prettier": {
+				"allowed": false
+			},
+			"completions": {
+				"words_min_length": 1
+			},
+			"use_on_type_format": true,
+			"remove_trailing_whitespace_on_save": true,
 			"tab_size": 4,
 			"preferred_line_length": 120,
 			"format_on_save": "on",
@@ -200,7 +210,12 @@
 			"preferred_line_length": 100,
 			"tab_size": 2,
 			"hard_tabs": true,
-			"language_servers": ["!typescript-language-server", "vtsls", "biome"],
+			"language_servers": [
+				"!typescript-language-server",
+				"vtsls",
+				"biome",
+				"tailwindcss-language-server"
+			],
 			"prettier": { "allowed": false },
 			"formatter": { "language_server": { "name": "biome" } },
 			"format_on_save": "on",
@@ -350,8 +365,8 @@
 	},
 	"theme": {
 		"mode": "dark",
-		"light": "Catppuccin Iced Latte (Blur)",
-		"dark": "The Dark Side"
+		"light": "Catppuccin Latte - No Italics",
+		"dark": "One Dark Pro"
 	},
 	"file_types": {
 		"JSON": ["prettierrc"]
@@ -362,17 +377,7 @@
 			"settings": {
 				"classFunctions": ["cva", "cx"],
 				"experimental": {
-					"classRegex": [
-						"\\.className\\s*[+]?=\\s*['\"]([^'\"]*)['\"]",
-						"\\.setAttributeNS\\(.*,\\s*['\"]class['\"],\\s*['\"]([^'\"]*)['\"]",
-						"\\.setAttribute\\(['\"]class['\"],\\s*['\"]([^'\"]*)['\"]",
-						"\\.classList\\.add\\(['\"]([^'\"]*)['\"]",
-						"\\.classList\\.remove\\(['\"]([^'\"]*)['\"]",
-						"\\.classList\\.toggle\\(['\"]([^'\"]*)['\"]",
-						"\\.classList\\.contains\\(['\"]([^'\"]*)['\"]",
-						"\\.classList\\.replace\\(\\s*['\"]([^'\"]*)['\"]",
-						"\\.classList\\.replace\\([^,)]+,\\s*['\"]([^'\"]*)['\"]"
-					]
+					"classRegex": ["[cls|className]\\s\\:\\=\\s\"([^\"]*)"]
 				}
 			}
 		},
