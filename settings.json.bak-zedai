@@ -1,100 +1,36 @@
 {
-	"agent_servers": {
-		"cursor": {
-			"favorite_config_option_values": {
-				"model": ["composer-2.5"]
-			},
-			"default_config_options": {
-				"mode": "agent",
-				"fast": "true",
-				"model": "composer-2.5"
-			},
-			"type": "registry"
-		}
-	},
-	"markdown_preview": {
-		"max_width": 800.0,
-		"limit_content_width": true
-	},
-	"context_servers": {
-		"dbhub (postgres)": {
-			"enabled": true,
-			"remote": false,
-			"command": "dbhub",
-			"args": ["--stdio"],
-			"env": {
-				"DATABASE_URL": "${env:DATABASE_URL}"
-			}
-		},
-		"file-system": {
-			"enabled": true,
-			"remote": false,
-			"command": "bunx",
-			"args": [
-				"-y",
-				"@modelcontextprotocol/server-filesystem",
-				"home/nishat/credets/",
-				"home/nishat/blogs-practise",
-				"home/nishat/fcom-automation",
-				"home/nishat/blogs-practise"
-			]
-		},
-		"mcp-server-github": {
-			"enabled": true,
-			"remote": false,
-			"settings": {
-				"github_personal_access_token": "${env:GITHUB_PERSONAL_ACCESS_TOKEN}"
-			}
-		}
-	},
 	"edit_predictions": {
-		"allow_data_collection": "no"
-	},
-	"agent_buffer_font_size": 17.4,
+  "allow_data_collection": "yes"
+ },
+ "agent_buffer_font_size": 17.4,
 	"agent_ui_font_size": 17.0,
-	"markdown_preview_font_size": 19.4,
+	"markdown_preview_font_size": 18.4,
 	"markdown_preview_code_font_family": "FiraCode Nerd Font",
-	"markdown_preview_font_family": "Cascadia Mono",
+	"markdown_preview_font_family": "Adwaita Mono",
 	"language_models": {
 		"openai_compatible": {
-			"freebuff2api": {
-				"api_url": "http://127.0.0.1:9000/v1",
-				"available_models": [
-					{
-						"name": "deepseek/deepseek-v4-flash",
-						"max_tokens": 200000,
-						"max_output_tokens": 32000,
-						"max_completion_tokens": 200000,
-						"reasoning_effort": "high",
-						"capabilities": {
-							"tools": true,
-							"images": true,
-							"parallel_tool_calls": true,
-							"prompt_cache_key": true,
-							"chat_completions": true,
-							"interleaved_reasoning": true,
-							"max_tokens_parameter": true
-						}
-					},
-					{
-						"name": "mimo/mimo-v2.5",
-						"max_tokens": 200000,
-						"max_output_tokens": 32000,
-						"max_completion_tokens": 200000,
-						"reasoning_effort": "high",
-						"capabilities": {
-							"tools": true,
-							"images": true,
-							"parallel_tool_calls": true,
-							"prompt_cache_key": true,
-							"chat_completions": true,
-							"interleaved_reasoning": true,
-							"max_tokens_parameter": true
-						}
-					}
-				]
-			}
-		}
+   "Freebufff-Local": {
+    "api_url": "http://127.0.0.1:9000/v1",
+    "available_models": [
+     {
+      "name": "deepseek/deepseek-v4-flash",
+      "max_tokens": 200000,
+      "max_output_tokens": 32000,
+      "max_completion_tokens": 200000,
+      "reasoning_effort": "high",
+      "capabilities": {
+       "tools": true,
+       "images": true,
+       "parallel_tool_calls": true,
+       "prompt_cache_key": true,
+       "chat_completions": true,
+       "interleaved_reasoning": true,
+       "max_tokens_parameter": true
+      }
+     }
+    ]
+   }
+  }
 	},
 	"completion_menu_item_kind": "symbol",
 	"semantic_tokens": "combined",
@@ -366,29 +302,25 @@
 	"unnecessary_code_fade": 0.5,
 	"lsp_document_colors": null,
 	"disable_ai": false,
-	"show_edit_predictions": false,
+	"show_edit_predictions": true,
 
 	"line_indicator_format": "long",
 	"collaboration_panel": { "dock": "left", "button": false },
 	"agent": {
-		"terminal_init_command": "",
-		"play_sound_when_agent_done": "when_hidden",
-		"notify_when_agent_waiting": "all_screens",
 		"auto_compact": {
-			"threshold": "90%"
-		},
-		"show_turn_stats": true,
-		"message_editor_min_lines": 3,
-		"use_modifier_to_send": true,
-		"thinking_display": "always_collapsed",
-		"expand_terminal_card": false,
-		"expand_edit_card": false,
-		"favorite_models": [
+   "threshold": "90%"
+  },
+  "show_turn_stats": true,
+  "message_editor_min_lines": 3,
+  "use_modifier_to_send": true,
+  "thinking_display": "always_collapsed",
+  "expand_terminal_card": false,
+  "expand_edit_card": false,
+  "favorite_models": [
 			{
-				"provider": "freebuff2api",
-				"model": "mimo/mimo-v2.5",
-				"enable_thinking": true,
-				"effort": "high"
+				"provider": "FreeBuff Local",
+				"model": "deepseek/deepseek-v4-flash",
+				"enable_thinking": true
 			}
 		],
 		"enable_feedback": false,
@@ -430,13 +362,13 @@
 		},
 		"sandbox_permissions": {
 			"allow_unsandboxed": true,
-			"network_hosts": ["freebuff.com", "www.codebuff.com", "zed.dev"]
+   "network_hosts": ["freebuff.com", "www.codebuff.com", "zed.dev"]
 		},
 		"default_model": {
-			"effort": "high",
-			"provider": "freebuff2api",
+			"effort": "minimal",
+   "provider": "Freebufff-Local",
 			"model": "deepseek/deepseek-v4-flash",
-			"enable_thinking": true
+			"enable_thinking": false
 		},
 		"sidebar_side": "right",
 		"dock": "right",
